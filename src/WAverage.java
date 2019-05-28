@@ -17,14 +17,7 @@ public class WAverage {
 	double w5 = 0.10 ;
 	double w6 = 0.10 ;
 	
-	double wtaver1 = testsc1 * w1 ;
-	double wtaver2 = testsc2 * w2 ;
-	double wtaver3 = testsc3 * w3 ;
-	double wtaver4 = testsc4 * w4 ;
-	double wtaver5 = testsc5 * w5 ;
-	double wtaver6 = testsc6 * w6 ;
-	
-	double TestsWeighted = ((wtaver1 + wtaver2 + wtaver3 + wtaver4 + wtaver5 + wtaver6) / 6) ;
+	double TestsWeighted = ((testsc1 * w1) + (testsc2 * w2) + (testsc3 * w3) + (testsc4 * w4) + (testsc5 * w5) + (testsc6 * w6)) ;
 	
 	System.out.print("The six test scores and their respective weights:\n\t") ;
 	System.out.printf("%-5d %2f\n\t", testsc1, w1);
@@ -48,14 +41,7 @@ public class WAverage {
 	double aweight5 = 0.25 ;
 	double aweight6 = 0.20 ;
 	
-	double Assignaver1= assigsc1 * aweight1 ;
-	double Assignaver2= assigsc2 * aweight2 ;
-	double Assignaver3= assigsc3 * aweight3 ;
-	double Assignaver4= assigsc4 * aweight4 ;
-	double Assignaver5= assigsc5 * aweight5 ;
-	double Assignaver6= assigsc6 * aweight6 ;
-	
-	double Assigaverage = ((Assignaver1 + Assignaver2 + Assignaver3 + Assignaver4 + Assignaver5 + Assignaver6) /6) ;
+	double Assigaverage = ((assigsc1 * aweight1) + (assigsc2 * aweight2) + (assigsc3 * aweight3) + (assigsc4 * aweight4) + (assigsc5 * aweight5) + (assigsc6 * aweight6)) ;
 	
 	double FinalAverage = ((TestsWeighted + Assigaverage) /2) ;
 	
